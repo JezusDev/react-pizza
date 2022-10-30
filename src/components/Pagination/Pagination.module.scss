@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 10px 0;
+  user-select: none;
+}
+
+.li, .previous, .next {
+  margin: 0 10px;
+  cursor: pointer;
+
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.activeLi {
+  a {
+    background: #fe5f1e;
+    border: none;
+    color: #fff;
+  }
+}
